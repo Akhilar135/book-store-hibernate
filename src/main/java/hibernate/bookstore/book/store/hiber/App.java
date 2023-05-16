@@ -2,6 +2,7 @@ package hibernate.bookstore.book.store.hiber;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.ArrayList;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -42,11 +43,15 @@ public class App
     	user2.setUserId(222);
     	user2.setUserName("Akhil");
     	
-    	user1.setBooks(list);
-    	
-    	book1.getUsers().add(user1);
-    	
+    	//user1.setBooks(list);
     	author1.setBook(book1);
+//    	book1.getUsers().add(user1);//ManyToMany
+    	//book1.setUser(users);
+    	
+    	List<User> users= new ArrayList();
+        users.add(user1);//OneToMany
+        
+        book1.setUs(users);//ManyToOne
     	
     	
     	

@@ -17,10 +17,8 @@ public class User {
 	private int userId;
 	private String userName;
 	
-	@OneToMany
-	(mappedBy = "user") private List<Book> books = new ArrayList<Book>();
 	
-	
+
 //	@ManyToMany
 //	private List<Book> books = new ArrayList<Book>();
 	
@@ -37,19 +35,19 @@ public class User {
 		this.userName = userName;
 	}
 	
-	public List<Book> getBooks() {
-		return books;
-	}
-	public void setBooks(List<Book> books) {
-		this.books = books;
-	}
+//	public List<Book> getBooks() {
+//		return books;
+//	}
+//	public void setBooks(List<Book> books) {
+//		this.books = books;
+//	}
 	
 	 
 	 
-	@Override
-	public String toString() {
-		return "User [id=" + userId + ", name=" + userName +  "]";
-	}
+//	@Override
+//	public String toString() {
+//		return "User [id=" + userId + ", name=" + userName +  "]";
+//	}
 	
 	
 	
