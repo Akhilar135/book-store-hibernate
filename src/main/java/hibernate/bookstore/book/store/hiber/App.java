@@ -44,7 +44,7 @@ public class App
     	user2.setUserName("Akhil");
     	
     	//user1.setBooks(list);
-    	author1.setBook(book1);
+    	author1.setBook(book1);//One to One
 //    	book1.getUsers().add(user1);//ManyToMany
     	//book1.setUser(users);
     	
